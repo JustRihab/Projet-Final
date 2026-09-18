@@ -61,36 +61,33 @@ projet-final/
 node projet-final/src/index.js
 node projet-final/tests/scenarios.js
 
-🧪 Tests
-- Ajouter un profil valide
+## 🧪 Tests
+- Ajouter un profil valide  
+- Mettre à jour une journée  
+- Calculer et rechercher (progression correcte, recherche insensible à la casse)  
+- Cas invalide : identifiant déjà utilisé  
+- Cas invalide : jour hors 1–7 ou exercices incohérents  
 
-- Mettre à jour une journée
+---
 
-- Calculer et rechercher (progression correcte, recherche insensible à la casse)
+## 📑 Conventions
+- Calculs faits directement depuis les données  
+- Pourcentages arrondis à l’entier le plus proche  
+- Distinction entre journées absentes et challenges non terminés  
+- Moyenne du groupe calculée sur les journées renseignées  
 
-- Cas invalide : identifiant déjà utilisé
+---
 
-- Cas invalide : jour hors 1–7 ou exercices incohérents
+## 📤 Livrables
+- Dépôt GitHub personnel avec `projet-final`  
+- README.md (ce document)  
+- Programme exécutable Node.js  
+- Historique Git clair et progressif  
 
-📑 Conventions
-- Calculs faits directement depuis les données
+---
 
-- Pourcentages arrondis à l’entier le plus proche
-
-- Distinction entre journées absentes et challenges non terminés
-
-- Moyenne du groupe calculée sur les journées renseignées
-
-📤 Livrables
-- Dépôt GitHub personnel avec projet-final
-
-- README.md (ce document)
-
-- Programme exécutable Node.js
-
-- Historique Git clair et progressif
-
-📌 Workflow Git (exemple de commits)
+## 📌 Workflow Git (exemple de commits)
+```bash
 git commit -m "Initialisation du projet final : structure de base"
 git commit -m "Ajout des apprenants fictifs dans data.js"
 git commit -m "Implémentation de normaliserNom et validerResultat"
