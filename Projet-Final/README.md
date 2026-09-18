@@ -20,9 +20,9 @@ Chaque apprenant est un objet avec :
 - Recherche par identifiant ou nom (insensible à la casse)  
 - Calcul de progression individuelle (pourcentage, challenges, journées)  
 - Attribution d’un niveau :  
-  - Solide ≥ 80 %  
-  - En progression 50–79 %  
-  - À renforcer < 50 %  
+  - 🟢 **Solide** ≥ 80 %  
+  - 🟡 **En progression** 50–79 %  
+  - 🔴 **À renforcer** < 50 %  
 - Filtrage, tri (progression, alphabétique)  
 - Tableau de bord global (moyenne du groupe, répartition des niveaux)
 
@@ -43,6 +43,7 @@ Chaque apprenant est un objet avec :
 ---
 
 ## 📂 Organisation
+
 projet-final/
 │-- README.md
 │-- src/
@@ -52,6 +53,7 @@ projet-final/
 │-- tests/
 │   └-- scenarios.js
 
+
 ---
 
 ## ▶️ Lancement
@@ -60,40 +62,35 @@ node projet-final/src/index.js
 node projet-final/tests/scenarios.js
 
 🧪 Tests
+- Ajouter un profil valide
 
-1.Ajouter un profil valide
+- Mettre à jour une journée
 
-2.Mettre à jour une journée
+- Calculer et rechercher (progression correcte, recherche insensible à la casse)
 
-3.Calculer et rechercher (progression correcte, recherche insensible à la casse)
+- Cas invalide : identifiant déjà utilisé
 
-4.Cas invalide : identifiant déjà utilisé
-
-5.Cas invalide : jour hors 1–7 ou exercices incohérents
-
+- Cas invalide : jour hors 1–7 ou exercices incohérents
 
 📑 Conventions
+- Calculs faits directement depuis les données
 
-+Calculs faits directement depuis les données
+- Pourcentages arrondis à l’entier le plus proche
 
-+Pourcentages arrondis à l’entier le plus proche
+- Distinction entre journées absentes et challenges non terminés
 
-+Distinction entre journées absentes et challenges non terminés
-
-+Moyenne du groupe calculée sur les journées renseignées
+- Moyenne du groupe calculée sur les journées renseignées
 
 📤 Livrables
+- Dépôt GitHub personnel avec projet-final
 
-+Dépôt GitHub personnel avec projet-final
+- README.md (ce document)
 
-+README.md (ce document)
+- Programme exécutable Node.js
 
-+Programme exécutable Node.js
-
-+Historique Git clair et progressif
+- Historique Git clair et progressif
 
 📌 Workflow Git (exemple de commits)
-
 git commit -m "Initialisation du projet final : structure de base"
 git commit -m "Ajout des apprenants fictifs dans data.js"
 git commit -m "Implémentation de normaliserNom et validerResultat"
